@@ -215,7 +215,9 @@ bar {
 
 }
 hide_edge_borders both
+#exec_always --no-startup-id "killall -q compton; compton --config ~/.config/compton/compton.conf"
 exec_always feh --bg-scale ~/Pictures/Wallpapers/black_orange_wallpaper.jpg
+exec_always setxkbmap -option caps:escape
 exec google-chrome
 exec tilix
 exec subl
